@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  history: MyString
+  neighborhood: MyString
+  schools: MyString
+  transportation: MyString
+  job: MyString
+  market: MyString
+  sports: MyString
+  recreation: MyString
+  culture: MyString
+  health: MyString
+  currency: MyString
+  consulate: MyString
+  population: MyString
+  cost_of_living: MyString
+
+two:
+  history: MyString
+  neighborhood: MyString
+  schools: MyString
+  transportation: MyString
+  job: MyString
+  market: MyString
+  sports: MyString
+  recreation: MyString
+  culture: MyString
+  health: MyString
+  currency: MyString
+  consulate: MyString
+  population: MyString
+  cost_of_living: MyString

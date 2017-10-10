@@ -1,0 +1,87 @@
+<%= form_with(model: city, local: true) do |form| %>
+  <% if city.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(city.errors.count, "error") %> prohibited this city from being saved:</h2>
+
+      <ul>
+      <% city.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :history %>
+    <%= form.text_field :history, id: :city_history %>
+  </div>
+
+  <div class="field">
+    <%= form.label :neighborhood %>
+    <%= form.text_field :neighborhood, id: :city_neighborhood %>
+  </div>
+
+  <div class="field">
+    <%= form.label :schools %>
+    <%= form.text_field :schools, id: :city_schools %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transportation %>
+    <%= form.text_field :transportation, id: :city_transportation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :job %>
+    <%= form.text_field :job, id: :city_job %>
+  </div>
+
+  <div class="field">
+    <%= form.label :market %>
+    <%= form.text_field :market, id: :city_market %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sports %>
+    <%= form.text_field :sports, id: :city_sports %>
+  </div>
+
+  <div class="field">
+    <%= form.label :recreation %>
+    <%= form.text_field :recreation, id: :city_recreation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :culture %>
+    <%= form.text_field :culture, id: :city_culture %>
+  </div>
+
+  <div class="field">
+    <%= form.label :health %>
+    <%= form.text_field :health, id: :city_health %>
+  </div>
+
+  <div class="field">
+    <%= form.label :currency %>
+    <%= form.text_field :currency, id: :city_currency %>
+  </div>
+
+  <div class="field">
+    <%= form.label :consulate %>
+    <%= form.text_field :consulate, id: :city_consulate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :population %>
+    <%= form.text_field :population, id: :city_population %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost_of_living %>
+    <%= form.text_field :cost_of_living, id: :city_cost_of_living %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
