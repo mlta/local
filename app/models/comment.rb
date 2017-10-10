@@ -1,4 +1,3 @@
-class Comment < ApplicationRecord ::Base
-  belongs_to : cities
-  belongs_to : users
+class Comment < ApplicationRecord
+  belongs_to :user
 end

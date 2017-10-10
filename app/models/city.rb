@@ -1,4 +1,2 @@
-class City < ApplicationRecord :: Base
-  has_many : comments
-  has_many : articles
+class City < ApplicationRecord
 end

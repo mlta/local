@@ -1,4 +1,2 @@
-class Article < ApplicationRecord :: Base
-  belongs_to : cities
-  belongs_to : users
+class Article < ApplicationRecord
 end
