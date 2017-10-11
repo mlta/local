@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'login/index'
+
+  get 'welcome/index'
+  root 'welcome#index'
+
   resources :users
   resources :cities
   resources :comments

@@ -8,7 +8,36 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="controller-<%= controller_name %> action-<%= action_name %>">
+    <div class="wrapper">
+      <div class="content">
+        <header class="site-header">
+          <div class="search">
+            <input type="text" class="search-box" placeholder="Search by ZIP Code" /><button class="search-btn">Go</button>
+          </div>
+          <div class="flex-grow-1">
+            <img src="./img/TheNewLocal-Logo.png" alt="" width="170" height="170">
+          </div>
+
+          <nav class="nav-bar">
+            <ul class="nav-ul">
+              <li class="nav-item"><span class="nav-link-text">Sign In</span></li>
+              <!-- <li class="nav-item"><span class="nav-link-text">Espanol</span></li> -->
+            </ul>
+          </nav>
+        </header>
+
+        <%= yield %>
+
+        <footer class="site-footer">
+          <nav class="footer">
+            <a href="/" class="white-text">Home</a>
+            <a href="/" class="white-text">About Us</a>
+            <a href="/" class="white-text">Contact Us</a>
+          </nav>
+        </footer>
+      </div>
+      </div>
+    </div>
   </body>
 </html>
