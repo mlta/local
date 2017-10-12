@@ -37,7 +37,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.controller-user .wrapper {
+.controller-users .wrapper {
   background-image: image-url("chica.jpg");
   height: 100vh;
   width: 100vw;
@@ -342,7 +342,7 @@ input[type="submit"] {
 
 /*login*/
 
-.wrapperlogin {
+.controller-login .wrapper {
   background-image: image-url("rio.jpg");
   height: 100vh;
   width: 100vw;
@@ -548,7 +548,7 @@ textarea {
 
 /*ARTICLE*/
 
-.wrapperarticle {
+.controller-articles .wrapper {
   background-image: image-url("manwalking.jpg");
   height: 100vh;
   width: 100vw;

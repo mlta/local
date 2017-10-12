@@ -1,29 +1,49 @@
-<p id="notice"><%= notice %></p>
+<div class="user-main-content">
+  <div class="left-content">
+    <nav class="nav-barleft">
+      <ul class="nav-ul">
+        <li><span class="nav-link-text">History</span></li>
+        <li><span class="nav-link-text">Weather</span></li>
+        <li><span class="nav-link-text">Neighborhood</span></li>
+        <li><span class="nav-link-text">Schools</span></li>
+        <li><span class="nav-link-text">Transportation</span></li>
+        <li><span class="nav-link-text">Job Market</span></li>
+        <li><span class="nav-link-text">Sports</span></li>
+        <li><span class="nav-link-text">Recreation</span></li>
+        <li><span class="nav-link-text">Culture</span></li>
+        <li><span class="nav-link-text">Health</span></li>
+        <li><span class="nav-link-text">Currency</span></li>
+        <li><span class="nav-link-text">Consulates</span></li>
+        <li><span class="nav-link-text">Population</span></li>
+      </ul>
+    </nav>
+  </div>
 
-<h1>Users</h1>
+  <div class="middle-content">
+    <h2>History</h2>
+    <ul class="container">
+      <li><img src="" width="100" height="100" alt="" />Comment #1</li>
+    </ul>
+    <form action="#" method="post">
+      <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">Hey... say something!</textarea>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.email %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>
+  <div class="right-content">
+    <h2>Cost of Living</h2>
+    <div class="cost-item">
+      <h4>Housing</h4>
+      <span class="cost-number">$99,999</span>
+    </div>
+    <div class="cost-item">
+      <h4>Food</h4>
+      <span class="cost-number">$99,999</span>
+    </div>
+    <div class="cost-item">
+      <h4>Transportation</h4>
+      <span class="cost-number">$99,999</span>
+    </div>
+    <!-- insertar informacion sobre lo que cliquearon -->
+  </div>
+</div>
