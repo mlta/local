@@ -17,10 +17,8 @@
     <div class="left-content">
       <nav class="nav-barleft">
         <ul class="nav-ul">
-          <!--<li><span class="nav-link-text">History</span></li>-->
-          <li><a href="#" id="history">History</a></li>
-          <li><a href="#" id="weather">Weather</a></li>
-          <!--<li><span class="nav-link-text">Weather</span></li>-->
+          <li><span class="nav-link-text">History</span></li>
+          <li><span class="nav-link-text">Weather</span></li>
           <li><span class="nav-link-text">Neighborhood</span></li>
           <li><span class="nav-link-text">Schools</span></li>
           <li><span class="nav-link-text">Transportation</span></li>
@@ -37,22 +35,16 @@
     </div>
 
     <div class="middle-content">
-      <div id="history" class="hidden">
-        <h2>History</h2>
-        <ul class="container">
-          <li><%= @city.history %></li>
-          <li><img src="" width="100" height="100" alt="" />Comment #1</li>
-        </ul>
-        <form action="#" method="post">
-          <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">Hey... say something!</textarea>
-            <input type="submit" value="Submit">
-        </form>
-      </div>
-      <div id="weather" class="hidden">
-        <h2>Weather</h2>
-      </div>
+      <h2>History</h2>
+      <ul class="container">
+        <li><%= @city.history %></li>
+        <li><img src="" width="100" height="100" alt="" />Comment #1</li>
+      </ul>
+      <form action="#" method="post">
+        <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">Hey... say something!</textarea>
+          <input type="submit" value="Submit">
+      </form>
     </div>
-
 
     <div class="right-content">
       <h2>Cost of Living</h2>
@@ -71,18 +63,3 @@
       <!-- insertar informacion sobre lo que cliquearon -->
     </div>
 </div>
-
-<script>
-  $(function() {
-    $("a#history").click(function(event) {
-      event.preventDefault();
-      $("div#history").toggle();
-    })
-  })
-    $(function() {
-    $("a#weather").click(function(event) {
-      event.preventDefault();
-      $("div#weather").toggle();
-    })
-  })
-</script>
