@@ -14,44 +14,75 @@
 </div>
 
 <div class="user-main-content">
-    <div class="left-content">
-      <nav class="nav-barleft">
-        <ul class="nav-ul">
-          <!--<li><span class="nav-link-text">History</span></li>-->
-          <li><a href="#" id="history">History</a></li>
-          <li><a href="#" id="weather">Weather</a></li>
-          <!--<li><span class="nav-link-text">Weather</span></li>-->
-          <li><span class="nav-link-text">Neighborhood</span></li>
-          <li><span class="nav-link-text">Schools</span></li>
-          <li><span class="nav-link-text">Transportation</span></li>
-          <li><span class="nav-link-text">Job Market</span></li>
-          <li><span class="nav-link-text">Sports</span></li>
-          <li><span class="nav-link-text">Recreation</span></li>
-          <li><span class="nav-link-text">Culture</span></li>
-          <li><span class="nav-link-text">Health</span></li>
-          <li><span class="nav-link-text">Currency</span></li>
-          <li><span class="nav-link-text">Consulates</span></li>
-          <li><span class="nav-link-text">Population</span></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="left-content">
+    <nav class="nav-barleft">
+      <ul class="nav-ul">
+        <li><a href="#" id="history">History</a></li>
+        <li><a href="#" id="weather">Weather</a></li>
+        <li><a href="#" id="neighborhood">Neighborhood</a></li>
+        <li><a href="#" id="schools">Schools</a></li>
+        <li><a href="#" id="transportation">Transportation</a></li>
+        <li><a href="#" id="jobmarket">Job Market</a></li>
+        <li><a href="#" id="sports">Sports</a></li>
+        <li><a href="#" id="recreation">Recreation</a></li>
+        <li><a href="#" id="culture">Culture</a></li>
+        <li><a href="#" id="health">Health</a></li>
+        <li><a href="#" id="currency">Curreny</a></li>
+        <li><a href="#" id="consulates">Consulates</a></li>
+        <li><a href="#" id="population">Population</a></li>
+      </ul>
+    </nav>
+</div>
 
-    <div class="middle-content">
-      <div id="history" class="hidden">
-        <h2>History</h2>
-        <ul class="container">
-          <li><%= @city.history %></li>
-          <li><img src="" width="100" height="100" alt="" />Comment #1</li>
-        </ul>
-        <form action="#" method="post">
-          <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">Hey... say something!</textarea>
-            <input type="submit" value="Submit">
-        </form>
-      </div>
-      <div id="weather" class="hidden">
-        <h2>Weather</h2>
-      </div>
-    </div>
+<div class="middle-content">
+  <div id="history" class="hidden">
+    <h2>History</h2>
+    <ul class="container">
+      <li><%= @city.history %></li>
+      <li><img src="" width="100" height="100" alt="" />Comment #1</li>
+    </ul>
+    <form action="#" method="post">
+      <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">Hey... say something!</textarea>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div id="weather" class="hidden">
+    <h2>Weather</h2>
+  </div>
+  <div id="neighborhood" class="hidden">
+    <h2>Neighborhood</h2>
+  </div>
+  <div id="schools" class="hidden">
+    <h2>Schools</h2>
+  </div>
+  <div id="transportation" class="hidden">
+    <h2>Transportation</h2>
+  </div>
+  <div id="jobmarket" class="hidden">
+    <h2>Job Market</h2>
+  </div>
+  <div id="sports" class="hidden">
+    <h2>Sports</h2>
+  </div>
+  <div id="recreation" class="hidden">
+    <h2>Recreation</h2>
+  </div>
+  <div id="culture" class="hidden">
+    <h2>Culture</h2>
+  </div>
+  <div id="health" class="hidden">
+    <h2>Health</h2>
+  </div>
+  <div id="currency" class="hidden">
+    <h2>Currency</h2>
+  </div>
+  <div id="consulates" class="hidden">
+    <h2>Consulates</h2>
+  </div>
+  <div id="population" class="hidden">
+    <h2>Population</h2>
+  </div>
+</div>
 
 
     <div class="right-content">
@@ -77,12 +108,234 @@
     $("a#history").click(function(event) {
       event.preventDefault();
       $("div#history").toggle();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#transportation").hide();
+      $("div#jobmarket").hide();
+      $("div#sports").hide();
+      $("div#recreation").hide();
+      $("div#culture").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
     })
   })
-    $(function() {
+  $(function() {
     $("a#weather").click(function(event) {
       event.preventDefault();
       $("div#weather").toggle();
+      $("div#history").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#transportation").hide();
+      $("div#jobmarket").hide();
+      $("div#sports").hide();
+      $("div#recreation").hide();
+      $("div#culture").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#neighborhood").click(function(event) {
+      event.preventDefault();
+      $("div#neighborhood").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#schools").hide();
+      $("div#transportation").hide();
+      $("div#jobmarket").hide();
+      $("div#sports").hide();
+      $("div#recreation").hide();
+      $("div#culture").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#schools").click(function(event) {
+      event.preventDefault();
+      $("div#schools").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#transportation").hide();
+      $("div#jobmarket").hide();
+      $("div#sports").hide();
+      $("div#recreation").hide();
+      $("div#culture").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#transportation").click(function(event) {
+      event.preventDefault();
+      $("div#transportation").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#jobmarket").hide();
+      $("div#sports").hide();
+      $("div#recreation").hide();
+      $("div#culture").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#jobmarket").click(function(event) {
+      event.preventDefault();
+      $("div#jobmarket").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#transportation").hide();
+      $("div#sports").hide();
+      $("div#recreation").hide();
+      $("div#culture").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#sports").click(function(event) {
+      event.preventDefault();
+      $("div#sports").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#jobmarket").hide();
+      $("div#transportation").hide();
+      $("div#recreation").hide();
+      $("div#culture").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#recreation").click(function(event) {
+      event.preventDefault();
+      $("div#recreation").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#jobmarket").hide();
+      $("div#transportation").hide();
+      $("div#sports").hide();
+      $("div#culture").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#culture").click(function(event) {
+      event.preventDefault();
+      $("div#culture").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#jobmarket").hide();
+      $("div#transportation").hide();
+      $("div#recreation").hide();
+      $("div#sports").hide();
+      $("div#health").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#health").click(function(event) {
+      event.preventDefault();
+      $("div#health").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#jobmarket").hide();
+      $("div#transportation").hide();
+      $("div#recreation").hide();
+      $("div#sports").hide();
+      $("div#culture").hide();
+      $("div#currency").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#currency").click(function(event) {
+      event.preventDefault();
+      $("div#currency").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#jobmarket").hide();
+      $("div#transportation").hide();
+      $("div#recreation").hide();
+      $("div#sports").hide();
+      $("div#health").hide();
+      $("div#culture").hide();
+      $("div#consulates").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#consulates").click(function(event) {
+      event.preventDefault();
+      $("div#consulates").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#jobmarket").hide();
+      $("div#transportation").hide();
+      $("div#recreation").hide();
+      $("div#sports").hide();
+      $("div#health").hide();
+      $("div#culture").hide();
+      $("div#currency").hide();
+      $("div#population").hide();
+    })
+  })
+  $(function() {
+    $("a#population").click(function(event) {
+      event.preventDefault();
+      $("div#population").toggle();
+      $("div#history").hide();
+      $("div#weather").hide();
+      $("div#neighborhood").hide();
+      $("div#schools").hide();
+      $("div#jobmarket").hide();
+      $("div#transportation").hide();
+      $("div#recreation").hide();
+      $("div#sports").hide();
+      $("div#health").hide();
+      $("div#culture").hide();
+      $("div#consulates").hide();
+      $("div#currency").hide();
     })
   })
 </script>
