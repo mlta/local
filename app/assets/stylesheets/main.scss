@@ -208,6 +208,9 @@ h6 {
 }
 
 .main-article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding-top: 60px;
   color: #fff;
 }
@@ -556,13 +559,16 @@ textarea {
   position: relative;
 }
 .article {
-  width: 84%;
-  padding: 30px;
-  margin-left: 117px;
+  display: flex;
+  justify-content: center;
+  width: 58%;
+  // padding: 30px;
+  margin-left: 20em;
   font-size: 17px;
   font-weight: 500;
   text-align: justify;
   letter-spacing: 3px;
+  line-height: 1.5em;
 }
 
 /*login*/
