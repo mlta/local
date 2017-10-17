@@ -5,7 +5,7 @@
     <nav class="second-nav-bar">
       <ul class="second-nav-ul">
         <li class="nav-item"><span class="nav-link-text"><%= link_to "Home", welcome_index_path() %></span></li>
-        <li class="nav-item"><span class="nav-link-text"><%= link_to "Destinations", new_city_path %></span></li>
+        <li class="nav-item"><span class="nav-link-text"><%= link_to "Destinations", cities_path %></span></li>
         <li class="nav-item"><span class="nav-link-text"><%= link_to "Articles", articles_path() %></span></li>
         <!-- <li class="nav-item"><span class="nav-link-text">Budget Calculator</span></li> -->
       </ul>
@@ -39,51 +39,88 @@
     <h2>History</h2>
     <ul class="container">
       <li><%= @city.history %></li>
-      <li><img src="" width="100" height="100" alt="" />Comment #1</li>
+      <!-- <li><img src="" width="100" height="100" alt="" />Comment #1</li> -->
     </ul>
-    <form action="#" method="post">
+    <!-- <form action="#" method="post">
       <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">Hey... say something!</textarea>
         <input type="submit" value="Submit">
-    </form>
+    </form> -->
   </div>
+
   <div id="weather" class="hidden">
     <h2>Weather</h2>
+    <ul class="container">
+      <li><%= @city.weather %></li>
   </div>
+
   <div id="neighborhood" class="hidden">
     <h2>Neighborhood</h2>
+    <ul class="container">
+      <li><%= @city.neighborhood %></li>
   </div>
+
   <div id="schools" class="hidden">
     <h2>Schools</h2>
+    <ul class="container">
+      <li><%= @city.schools %></li>
   </div>
+
   <div id="transportation" class="hidden">
     <h2>Transportation</h2>
+    <ul class="container">
+      <li><%= @city.transportation %></li>
   </div>
+
   <div id="jobmarket" class="hidden">
     <h2>Job Market</h2>
+    <ul class="container">
   </div>
+
   <div id="sports" class="hidden">
     <h2>Sports</h2>
+    <ul class="container">
+      <li><%= @city.sports %></li>
   </div>
+
   <div id="recreation" class="hidden">
     <h2>Recreation</h2>
+    <ul class="container">
+      <li><%= @city.recreation %></li>
   </div>
+
   <div id="culture" class="hidden">
     <h2>Culture</h2>
+    <ul class="container">
+      <li><%= @city.culture %></li>
   </div>
+
   <div id="health" class="hidden">
     <h2>Health</h2>
+    <ul class="container">
+      <li><%= @city.health %></li>
   </div>
+
   <div id="currency" class="hidden">
     <h2>Currency</h2>
+    <ul class="container">
+      <li><%= @city.currency %></li>
   </div>
+
   <div id="consulates" class="hidden">
     <h2>Consulates</h2>
+    <ul class="container">
+      <li><%= @city.consulate%></li>
   </div>
+
   <div id="population" class="hidden">
     <h2>Population</h2>
+    <ul class="container">
+      <li><%= @city.population %></li>
   </div>
+
 </div>
 
+<%= link_to 'Back', cities_path %>
 
     <div class="right-content">
       <h2>Cost of Living</h2>

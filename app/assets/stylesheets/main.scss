@@ -103,7 +103,7 @@ h6 {
   text-decoration: none;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -185px;
   left: 0;
   padding: 1rem;
   text-align: center;
@@ -549,7 +549,7 @@ textarea {
 /*ARTICLE*/
 
 .controller-articles .wrapper {
-  background-image: image-url("kevin-delvecchio-273275.jpg");
+  background-image: image-url("pexels-photo-310983.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -558,11 +558,11 @@ textarea {
 .article {
   width: 84%;
   padding: 30px;
-  margin: 30px;
+  margin-left: 117px;
   font-size: 17px;
   font-weight: 500;
   text-align: justify;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 /*login*/
@@ -614,4 +614,19 @@ div.hidden {
   width: 100vw;
   background-size: cover;
   position: relative;
+}
+.loginfrom {
+  margin: 94px;
+}
+
+.listcity {
+  color: white;
+}
+.alistcity {
+  letter-spacing: 6px;
+  font-size: small;
+  width: 40%;
+  padding: 70px;
+  margin-left: 536px;
+  font-weight: bold;
 }
