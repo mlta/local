@@ -11,6 +11,17 @@
     </div>
   <% end %>
 
+  <div class="container-upperbox">
+      <nav class="second-nav-bar">
+        <ul class="second-nav-ul">
+          <li class="nav-item"><span class="nav-link-text"><%= link_to "Home", welcome_index_path() %></span></li>
+          <li class="nav-item"><span class="nav-link-text"><%= link_to "List Of Cities", cities_path %></span></li>
+          <li class="nav-item"><span class="nav-link-text"><%= link_to "Articles", articles_path() %></span></li>
+          <!-- <li class="nav-item"><span class="nav-link-text">Budget Calculator</span></li> -->
+        </ul>
+      </nav>
+    <!-- Insert a picture in the background -->
+  </div>
   <div class="field">
     <%= form.label :history %>
     <%= form.text_area :history, id: :city_history, rows: 4, placeholder: "Fun facts about the city ..." %>

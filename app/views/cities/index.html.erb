@@ -6,7 +6,7 @@
     <nav class="second-nav-bar">
       <ul class="second-nav-ul">
         <li class="nav-item"><span class="nav-link-text"><%= link_to "Home", welcome_index_path() %></span></li>
-        <li class="nav-item"><span class="nav-link-text"><%= link_to "Cities", new_city_path %></span></li>
+        <li class="nav-item"><span class="nav-link-text"><%= link_to "Add City", new_city_path %></span></li>
         <li class="nav-item"><span class="nav-link-text"><%= link_to "Articles", articles_path() %></span></li>
         <!-- <li class="nav-item"><span class="nav-link-text">Budget Calculator</span></li> -->
       </ul>
@@ -54,7 +54,7 @@
         <td><%= city.cost_of_living %></td> -->
         <td><%= link_to 'Show', city %></td>
         <td><%= link_to 'Edit', edit_city_path(city) %></td>
-        <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
@@ -62,5 +62,5 @@
 
 <br>
 
-<%= link_to 'New City', new_city_path %>
+<!-- <%= link_to 'New City', new_city_path %> -->
 <%= link_to 'Back', cities_path %>
