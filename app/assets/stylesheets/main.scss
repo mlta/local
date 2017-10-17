@@ -258,7 +258,7 @@ h6 {
 .second-nav-ul {
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 60px);
+  width: calc(104% - 60px);
   padding: 15px 30px;
   margin: 0;
   border-top: 1px solid #fff;
@@ -276,7 +276,7 @@ h6 {
 
 .left-content {
   width: calc(25% - 120px);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.61);
   padding: 30px;
   margin: 30px;
 }
@@ -296,7 +296,7 @@ h6 {
 
 .middle-content {
   width: 55%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.61);
   padding: 30px;
   margin: 30px 0;
   color: #fff;
@@ -325,7 +325,7 @@ input[type="submit"] {
 
 .right-content {
   width: calc(25% - 120px);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.61);
   padding: 30px;
   margin: 30px;
   color: #fff;
@@ -651,7 +651,6 @@ div.hidden {
   display: flex;
   justify-content: center;
   width: 55%;
-  // padding: 30px;
   margin-left: 20em;
   margin-bottom: 3em;
   font-size: 20px;
@@ -678,7 +677,27 @@ div.hidden {
   }
 }
 .actions {
-  border-radius: 5em;
   margin-left: 50em;
   width: 16%;
+  background-color: rgba(18, 18, 19, 0.81);
+}
+.newcity {
+  font-family: sans-serif;
+}
+#notice {
+  color: white;
+  margin-left: 3em;
+  font-size: 1.5em;
+}
+.container {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  width: 79%;
+  margin-left: 5em;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 2.5em;
+  list-style: none;
 }
