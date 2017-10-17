@@ -7,6 +7,13 @@ body {
   background-color: #444;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > .wrapper {
+  flex: 1;
 }
 
 h1,
@@ -18,12 +25,10 @@ h6 {
   font-weight: 400;
 }
 
-.controller-welcome .wrapper {
+.controller-welcome {
   background-image: image-url("city.jpg");
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
-  position: relative;
+  background-attachment: fixed;
 }
 
 .wrapper:before {
@@ -37,12 +42,10 @@ h6 {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.controller-users .wrapper {
+.controller-users {
   background-image: image-url("chica.jpg");
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
-  position: relative;
+  background-attachment: fixed;
 }
 
 .content {
@@ -99,17 +102,18 @@ h6 {
   font-size: 300%;
 }
 /*Home about us contact us*/
-.footer {
+.site-footer {
   text-decoration: none;
-  position: absolute;
-  right: 0;
-  bottom: -185px;
-  left: 0;
+  // position: absolute;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
   padding: 1rem;
   text-align: center;
   color: #fff;
   font-weight: 200;
 }
+
 .footer a {
   text-decoration: none;
   // font-family:
@@ -345,12 +349,10 @@ input[type="submit"] {
 
 /*login*/
 
-.controller-login .wrapper {
+.controller-login {
   background-image: image-url("rio.jpg");
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
-  position: relative;
+  background-attachment: fixed;
 }
 
 $body-bg: #c1bdba;
@@ -551,12 +553,10 @@ textarea {
 
 /*ARTICLE*/
 
-.controller-articles .wrapper {
+.controller-articles {
   background-image: image-url("pexels-photo-310983.jpg");
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
-  position: relative;
+  background-attachment: fixed;
 }
 .article {
   display: flex;
@@ -574,7 +574,7 @@ textarea {
 
 /*login*/
 body {
-  padding-top: 15px;
+  padding-top: 0;
   font-size: 12px;
 }
 .main {
@@ -615,13 +615,12 @@ div.hidden {
   display: none;
 }
 
-.controller-cities .wrapper {
+.controller-cities {
   background-image: image-url("chica.jpg");
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
-  position: relative;
+  background-attachment: fixed;
 }
+
 .loginfrom {
   margin: 94px;
 }
