@@ -633,16 +633,15 @@ div.hidden {
 .alistcity {
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 83%;
   padding: 30px;
   margin-left: 20em;
-  font-size: 10px;
+  font-size: 17px;
   font-weight: 500;
   text-align: justify;
-  letter-spacing: 3px;
-  line-height: 1.5em;
-  background-color: rgba(0, 0, 0, 0.4);
-
+  letter-spacing: 4px;
+  line-height: 2.5em;
+  /* background-color: rgba(0, 0, 0, 0.4); */
   margin-left: 116px;
 }
 .field {
@@ -666,4 +665,11 @@ div.hidden {
   margin: 1em;
   font-weight: bold;
   font-size: 2em;
+  margin-left: -2em;
+}
+
+.listcity {
+  .name {
+    padding-right: 100px;
+  }
 }

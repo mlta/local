@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Cities</h1>
+<!-- <h1>Cities</h1> -->
 
 <div class="container-upperbox">
     <nav class="second-nav-bar">
@@ -38,7 +38,7 @@
   <tbody>
     <% @cities.each do |city| %>
       <tr class="listcity">
-        <td><%= city.name %></td>
+        <td class="name"><%= city.name %></td>
         <!-- <td><%= city.neighborhood %></td>
         <td><%= city.schools %></td>
         <td><%= city.transportation %></td>
@@ -63,4 +63,4 @@
 <br>
 
 <!-- <%= link_to 'New City', new_city_path %> -->
-<%= link_to 'Back', cities_path %>
+<!-- <%= link_to 'Back', cities_path %> -->
