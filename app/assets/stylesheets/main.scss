@@ -448,8 +448,8 @@ h1 {
 label {
   position: absolute;
   transform: translateY(6px);
-  left: 13px;
-  color: rgba($white, 0.5);
+  right: 65em;
+  color: white ($white, 0.5);
   transition: all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
@@ -630,8 +630,31 @@ div.hidden {
   color: white;
 }
 .alistcity {
-  letter-spacing: 0.5px;
-  font-size: small;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  padding: 30px;
+  margin-left: 20em;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 1.5em;
+  background-color: rgba(0, 0, 0, 0.4);
 
   margin-left: 116px;
+}
+.field {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  // padding: 30px;
+  margin-left: 20em;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 1.5em;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
 }

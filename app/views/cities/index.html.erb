@@ -39,7 +39,7 @@
     <% @cities.each do |city| %>
       <tr class="listcity">
         <td><%= city.history %></td>
-        <td><%= city.neighborhood %></td>
+        <!-- <td><%= city.neighborhood %></td>
         <td><%= city.schools %></td>
         <td><%= city.transportation %></td>
         <td><%= city.job %></td>
@@ -51,7 +51,7 @@
         <td><%= city.currency %></td>
         <td><%= city.consulate %></td>
         <td><%= city.population %></td>
-        <td><%= city.cost_of_living %></td>
+        <td><%= city.cost_of_living %></td> -->
         <td><%= link_to 'Show', city %></td>
         <td><%= link_to 'Edit', edit_city_path(city) %></td>
         <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></td>
