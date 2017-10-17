@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171017035610) do
+ActiveRecord::Schema.define(version: 20171017193032) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20171017035610) do
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.string "weather"
+    t.string "name"
     t.index ["user_id"], name: "index_cities_on_user_id"
   end
 
