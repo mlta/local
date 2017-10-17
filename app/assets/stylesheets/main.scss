@@ -272,7 +272,7 @@ h6 {
 }
 
 .left-content {
-  width: calc(15% - 120px);
+  width: calc(25% - 120px);
   background-color: rgba(0, 0, 0, 0.4);
   padding: 30px;
   margin: 30px;
@@ -281,16 +281,18 @@ h6 {
 .left-content ul {
   list-style: none;
   padding: 0 0 0 10px;
-  font-size: 16px;
+  font-size: 21px;
   color: #fff;
+  margin: 3em;
+  font-weight: bold;
 }
 
 .left-content li {
-  padding: 4px 0;
+  padding: 11px 0;
 }
 
 .middle-content {
-  width: 50%;
+  width: 55%;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 30px;
   margin: 30px 0;
@@ -495,7 +497,7 @@ textarea {
 }
 
 textarea {
-  border: 2px solid $gray-light;
+  border: 1px solid;
   resize: vertical;
 }
 
@@ -655,6 +657,7 @@ div.hidden {
   text-align: justify;
   letter-spacing: 3px;
   line-height: 1.5em;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(18, 18, 19, 0.81);
   color: white;
+  // border-radius: 1em;
 }

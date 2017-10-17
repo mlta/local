@@ -5,7 +5,7 @@
     <nav class="second-nav-bar">
       <ul class="second-nav-ul">
         <li class="nav-item"><span class="nav-link-text"><%= link_to "Home", welcome_index_path() %></span></li>
-        <li class="nav-item"><span class="nav-link-text"><%= link_to "Destinations", cities_path %></span></li>
+        <li class="nav-item"><span class="nav-link-text"><%= link_to "Cities", cities_path %></span></li>
         <li class="nav-item"><span class="nav-link-text"><%= link_to "Articles", articles_path() %></span></li>
         <!-- <li class="nav-item"><span class="nav-link-text">Budget Calculator</span></li> -->
       </ul>
@@ -18,17 +18,17 @@
     <nav class="nav-barleft">
       <ul class="nav-ul">
         <li><a href="#" id="history">History</a></li>
-        <li><a href="#" id="weather">Weather</a></li>
+        <!-- <li><a href="#" id="weather">Weather</a></li> -->
         <li><a href="#" id="neighborhood">Neighborhood</a></li>
-        <li><a href="#" id="schools">Schools</a></li>
+        <!-- <li><a href="#" id="schools">Schools</a></li> -->
         <li><a href="#" id="transportation">Transportation</a></li>
-        <li><a href="#" id="jobmarket">Job Market</a></li>
+        <!-- <li><a href="#" id="jobmarket">Job Market</a></li> -->
         <li><a href="#" id="sports">Sports</a></li>
         <li><a href="#" id="recreation">Recreation</a></li>
         <li><a href="#" id="culture">Culture</a></li>
-        <li><a href="#" id="health">Health</a></li>
-        <li><a href="#" id="currency">Curreny</a></li>
-        <li><a href="#" id="consulates">Consulates</a></li>
+        <!-- <li><a href="#" id="health">Health</a></li> -->
+        <!-- <li><a href="#" id="currency">Curreny</a></li> -->
+        <!-- <li><a href="#" id="consulates">Consulates</a></li> -->
         <li><a href="#" id="population">Population</a></li>
       </ul>
     </nav>
@@ -120,7 +120,6 @@
 
 </div>
 
-<%= link_to 'Back', cities_path %>
 
     <div class="right-content">
       <h2>Cost of Living</h2>
@@ -139,7 +138,7 @@
       <!-- insertar informacion sobre lo que cliquearon -->
     </div>
 </div>
-
+<%= link_to 'Back', cities_path %>
 <script>
   $(function() {
     $("a#history").click(function(event) {
